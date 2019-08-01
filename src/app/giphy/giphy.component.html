@@ -1,0 +1,5 @@
+<fieldset *ngIf="image$ | async as image">
+  <img [src]="image" />
+</fieldset>
+<button (click)="getRandomGif()">Random Gif</button>
+<input (keydown.enter)="findGif($event.target.value)" />
